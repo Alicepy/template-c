@@ -7,7 +7,7 @@
     "postinstall": "npm run copy-libs",
     "update-deps": "npm update",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy-libs": "cpx \"node_modules/{common,lib}/**/*\" src/bower_components",
+    "copy-libs": "cpx \"node_modules/{common,lib}/**/*\" src/bower_components  --include-empty-dirs",
     "pretest": "npm install"
   },
   "keywords": [],
